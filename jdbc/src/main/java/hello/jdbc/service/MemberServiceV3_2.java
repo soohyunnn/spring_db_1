@@ -29,7 +29,7 @@ public class MemberServiceV3_2 {
             try {
                 //비즈니스 로직
                 bizLogic(fromId, toId, money);
-            } catch (Exception e) {
+            } catch (SQLException e) {
                 throw new IllegalStateException(e);
             }
         });
